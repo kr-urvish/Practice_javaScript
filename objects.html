@@ -1,0 +1,118 @@
+<script>
+
+    //obj vs array
+
+    /* 
+    obj have proparty
+    array have indexs
+    
+    */
+//creat obj
+var ourDog = { "name": "Caper", "legs": 4, "tails": 1, "friends": ["everything!", "me", 10, 66] };
+
+console.log(ourDog);
+
+var newname = ourDog.name;
+var newlegs = ourDog.legs;
+
+console.log("our Dog name is: " + newname);
+console.log("our Dog legs is: " + newlegs);
+
+//with bracket
+
+console.log("with [ ] : " + ourDog["tails"]);
+
+
+//update proporty
+ourDog.name = "HappyCoder";
+console.log(ourDog);
+
+//edit object
+ourDog.bark = "bow-wow";
+console.log(ourDog);
+
+
+//delete properties of obj
+
+delete ourDog.tails;
+console.log(ourDog);
+
+
+//obj for lookups
+
+function phoneticLookup(val){
+    var phone = {
+        "alpha": "Adams",
+        "bravo": "Boston",
+        "charlie": "Chicago",
+        "delta": "Denver",
+        "echo": "Esay",
+        "foxtrot": "frank"
+
+    };
+
+    console.log(phone[val]);
+
+}
+var str = "bravo";
+
+phoneticLookup("bravo");
+
+
+
+//Testing Objects for Properties
+
+var myObj ={
+    gift: "pony",
+    pet: "kitten",
+    bed: "sleigh"
+};
+
+function chekObj(checkprop){
+    if(myObj.hasOwnProperty(checkprop)){
+        return myObj[checkprop];
+    }else{
+        return "Not Found";
+    }
+}
+
+var ans = chekObj("gift");
+
+console.log(ans);
+
+
+// Munipulating Complex Objects
+//it is like a JSON
+
+var myPlants =[
+   {
+        type: "flowers",
+        list: [
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+   },
+
+   {
+     type: "trees",
+     list:[
+        "fir",
+        "pine",
+        "birch"
+    ]
+   }
+];
+
+// here 
+
+
+
+
+
+
+
+
+
+
+</script>
