@@ -1,0 +1,1 @@
+export const capstr = str => str.toUpperCase();

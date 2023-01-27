@@ -1,0 +1,45 @@
+<script>
+
+
+class Book{
+
+    constructor(author){
+        this.author = author;
+    }
+
+//getter
+ get writer(){
+    return this.author;
+}
+
+//setter
+
+ set writer(updateAuthor){
+    this.author= updateAuthor;
+}
+
+};
+
+
+var abc_book = new Book("me");
+
+console.log(abc_book.writer);
+
+console.log(abc_book.writer());  //give error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>

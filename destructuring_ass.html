@@ -1,0 +1,48 @@
+<script>
+
+var obj = {x:3.6, y:7.4, z:6.54};
+
+
+var x = obj.x;
+var y = obj.y;
+var z = obj.z;
+
+//asssign value of obj 
+var {x:a, y:b, z:c} =obj;
+
+
+console.log(a + " ");
+console.log(b + " ");
+console.log(c);
+
+
+
+
+
+const Local_forecast = {
+    today : {min: 72, max: 83},
+    tomorrow : { min: 73.3, max: 84.6}
+};
+
+function getMaxOfTmrw(){
+    var ans = undefined;
+    var {tomorrow: {max: ans}} = Local_forecast;
+
+    return ans;
+}
+
+
+console.log(getMaxOfTmrw(Local_forecast));
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
